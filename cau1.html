@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau1</title>
+</head>
+<body>
+<script>
+    let arrayOne = [10, 5, 2, 8, -1, 6, 8];
+    let arrayTwo = [2, 4, 0, 5, 1];
+    let arrayThree = [-8, -6, -2, -6, -1, -1, -4];
+
+    function findMaxScore(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return document.write(max + "<br>");
+    }
+
+    findMaxScore(arrayOne);
+    findMaxScore(arrayTwo);
+    findMaxScore(arrayThree);
+
+</script>
+</body>
+</html>
